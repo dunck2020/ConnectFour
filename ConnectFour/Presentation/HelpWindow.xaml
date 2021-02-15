@@ -1,0 +1,62 @@
+﻿<Window x:Class="ConnectFour.Presentation.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConnectFour.Presentation"
+        mc:Ignorable="d"
+        Title="Help Window" 
+        Height="300" 
+        Width="500"
+        Background="DarkKhaki">
+
+    <Window.Resources>
+        <Style x:Key="HelpButtonStyle" TargetType="Button">
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Background" Value= "azure"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel
+        Background="DarkKhaki"
+        Margin="10">
+        <Label
+            Content="Instructions"
+            HorizontalAlignment="Center"
+            FontSize="25"
+            FontWeight="DemiBold"
+            Foreground="Azure"/>
+        <TextBlock
+            Text="1) Click 'Token Here' to drop a game piece"
+            Margin="5"
+            TextWrapping="Wrap"
+            Foreground="Azure"/>
+        <TextBlock
+            Text="2) When a player has a connect four it will display at the bottom of the screen."
+            Margin="5"
+            TextWrapping="Wrap"
+            Foreground="Azure"/>
+        <TextBlock
+            Text="3) To reset the gameboard only and keep scores click 'Reset Board'."
+            Margin="5"
+            TextWrapping="Wrap"
+            Foreground="Azure"/>
+        <TextBlock
+            Text="4) To reset the gameboard and scores click 'Reset All'."
+            Margin="5"
+            TextWrapping="Wrap"
+            Foreground="Azure"/>
+
+        <Button
+            x:Name="Button_ExitButton"
+            Content="Return"
+            Click="Button_ExitButton_Click"
+            Width="70"
+            Height="40"
+            Margin="20"
+            Style="{StaticResource HelpButtonStyle}"/>
+    </StackPanel>
+</Window>
