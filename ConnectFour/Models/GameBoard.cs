@@ -7,7 +7,7 @@ using ConnectFour.Presentation;
 
 namespace ConnectFour.Models
 {
-    
+    //GameBoard
     public class GameBoard : ObservableObject
     {
         #region CONSTANTS AND ENUMS
